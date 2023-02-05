@@ -34,6 +34,7 @@ nav {
   opacity: 1;
   transition: all 0.3s ease-in-out;
   border-bottom: 2px solid var(--bgColor);
+  border-radius: 0 0 10px 10px;
 }
 nav .container {
   width: 80%;
@@ -187,13 +188,12 @@ nav .container .hamburger-menu {
 /* Contact */
 #contact {
   width: 100%;
-  margin: 100px 0;
-  background-color: var(--bgColor);
-  color: var(--textColor);
+  margin-top: 100px;
+  color: black;
 }
 #contact .information h1 {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 #contact .information P {
   text-align: center;
@@ -209,31 +209,79 @@ nav .container .hamburger-menu {
   display: flex;
   justify-content: space-between;
 }
-#contact .container .col-1 {
-  width: 47%;
+#contact .container .col {
+  width: 49%;
 }
-#contact .container .col-2 {
-  width: 47%;
+#contact .container .col .input-card {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  align-items: center;
+  background-color: var(--bgColor);
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 10px;
 }
-#contact .container .col-2 h1 {
-  margin-bottom: 30px;
-  font-size: 28px;
+#contact .container .col .input-card input {
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 100%;
+  background-color: var(--bgColor);
+  color: #fff;
 }
-#contact .container .col-2 form {
+#contact .container .col .textarea-card {
+  width: 100%;
+  display: flex;
+  background-color: var(--bgColor);
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+#contact .container .col .textarea-card textarea {
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 100%;
+  background-color: var(--bgColor);
+  color: #fff;
+  height: 100px;
+}
+#contact .container .col button {
+  width: 50%;
+  margin-top: 20px;
+  padding: 5px 20px;
+  font-size: 16px;
+  background-color: var(--green);
+  color: var(--textColor);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+#contact .container .col button:hover {
+  background-color: var(--bgColor);
+}
+#contact .container .col .sosial-media .sosmed-akun {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 /* Contact */
+/* Footer */
+footer {
+  width: 100%;
+  color: var(--textColor);
+  background-color: var(--bgColor);
+}
+/* Footer */
 
 /* Responsive */
-
 /* Laptop */
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
   }
   nav .container,
+  #contact .container,
   #hero .container,
   #product .container {
     width: 90%;
@@ -241,11 +289,11 @@ nav .container .hamburger-menu {
     gap: 10px;
   }
   #hero .container .col-1 {
-    width: 45%;
+    width: 49%;
     padding-bottom: 70px;
   }
   #hero .container .col-2 {
-    width: 45%;
+    width: 49%;
     display: flex;
     justify-content: center;
   }
@@ -253,7 +301,14 @@ nav .container .hamburger-menu {
     font-size: 40px;
   }
   #product .container .col {
-    width: 45%;
+    width: 49%;
+  }
+  #contact .container .col {
+    width: 49%;
+  }
+  #contact .container .col .maps {
+    width: 100%;
+    height: 300px;
   }
 }
 /* Tablet */
@@ -263,6 +318,7 @@ nav .container .hamburger-menu {
   }
   nav .container,
   #hero .container,
+  #contact .container,
   #product .container {
     width: 90%;
     flex-wrap: wrap;
@@ -279,12 +335,21 @@ nav .container .hamburger-menu {
     display: flex;
     justify-content: center;
   }
+  .contact .information h1,
   #product .information h1 {
     font-size: 40px;
   }
   #product .container .col {
     width: 100%;
   }
+  #contact .container .col {
+    width: 100%;
+  }
+  #contact .container .col .input-card {
+    width: 100%;
+  }
+
+  /* Navbar */
   nav .container .hamburger-menu {
     display: inline-block;
   }
