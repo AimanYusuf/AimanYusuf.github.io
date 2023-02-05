@@ -114,7 +114,7 @@ nav .container .hamburger-menu {
 
 #hero .container .col-1 p {
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -130,12 +130,13 @@ nav .container .hamburger-menu {
   background-color: var(--green);
   font-weight: 600;
   color: var(--textColor);
-  font-size: 16px;
+  font-size: 20px;
 }
 /* Hero */
 /* Product */
 #product {
   width: 100%;
+  margin: 100px 0;
 }
 #product .information h1 {
   text-align: center;
@@ -183,6 +184,47 @@ nav .container .hamburger-menu {
   cursor: pointer;
 }
 /* Product */
+/* Contact */
+#contact {
+  width: 100%;
+  margin: 100px 0;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+#contact .information h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+#contact .information P {
+  text-align: center;
+  width: 50%;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#contact .container {
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#contact .container .col-1 {
+  width: 47%;
+}
+#contact .container .col-2 {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#contact .container .col-2 h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+#contact .container .col-2 form {
+}
+/* Contact */
 
 /* Responsive */
 
