@@ -23,4 +23,3 @@ function imgSlider(a) {
   document.querySelector(".t-shirt").src = a;
 }
 // Ketersediaan Fungsi
-const pemeberitahuan = alert("we dont have a function for this feature yet");
