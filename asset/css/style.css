@@ -139,6 +139,9 @@ nav .container .hamburger-menu {
   background-color: #fff;
   color: var(--bgColor);
 }
+#hero .container .col-1 .img-hero {
+  transition: all 0.3 ease-in-out;
+}
 /* Hero */
 /* Product */
 #product {
@@ -574,10 +577,11 @@ nav .container .hamburger-menu {
   html {
     font-size: 62.5%;
   }
-  nav .container,
   #hero .container,
   #contact .container,
-  #product .container #footer .container {
+  #product .container,
+  #footer .container,
+  #customize .container {
     width: 90%;
     flex-wrap: wrap;
     gap: 10px;
