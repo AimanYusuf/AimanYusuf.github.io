@@ -17,3 +17,10 @@ window.addEventListener("scroll", () => {
   const windowPost = window.scrollY > 0;
   navbar.classList.toggle("scrolActive", windowPost);
 });
+
+//Customize
+function imgSlider(a) {
+  document.querySelector(".t-shirt").src = a;
+}
+// Ketersediaan Fungsi
+const pemeberitahuan = alert("we dont have a function for this feature yet");

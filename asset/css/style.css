@@ -23,7 +23,7 @@ body {
 }
 /* Navbar */
 nav {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: -1%;
   left: 0;
@@ -218,10 +218,9 @@ nav .container .hamburger-menu {
 }
 #store .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0 30px 0;
   flex-wrap: wrap;
 }
 #store .information h1 {
@@ -241,7 +240,7 @@ nav .container .hamburger-menu {
   justify-content: center;
   background-color: var(--textColor);
   color: var(--bgColor);
-  padding: 0 10px;
+  padding: 20px 10px;
   border-radius: 10px;
 }
 #store .container .col .img {
@@ -262,10 +261,14 @@ nav .container .hamburger-menu {
   border-radius: 10px;
   background-color: var(--bgColor);
   color: var(--textColor);
-  margin-bottom: 20px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  transition: 0.3s ease-in-out;
+}
+#store .container .col .cta:hover {
+  background-color: var(--green);
+  color: var(--bgColor);
 }
 #store .container .col .cardinfo p {
   text-align: start;
@@ -290,7 +293,7 @@ nav .container .hamburger-menu {
   text-decoration: underline;
 }
 /* Store */
-/* Review */
+/* Customize */
 #customize {
   width: 100%;
   margin: 50px 0;
@@ -303,7 +306,7 @@ nav .container .hamburger-menu {
 }
 #customize .information h1 {
   text-align: center;
-  padding-top: 40px;
+  margin-top: 40px;
   font-size: 40px;
 }
 #customize .information P {
@@ -312,7 +315,78 @@ nav .container .hamburger-menu {
   font-size: 14px;
   margin: 0 auto;
 }
-/* Review */
+#customize .container {
+  display: flex;
+  margin: 50px auto;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#customize .container .col {
+  width: 48%;
+}
+#customize .container .col .img {
+  border: 2px solid #0a2647;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px 0;
+  background-color: var(--green);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: all 0.4s ease-in-out;
+}
+#customize .container .col .list {
+  display: flex;
+  margin: 10px 0;
+  gap: 10px;
+}
+#customize .container .col .list img {
+  border: 2px solid #0a2647;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+#customize .container .col .form {
+  margin: 50px 0;
+}
+#customize .container .col .input-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--bgColor);
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#customize .container .col .input-card input {
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 100%;
+  background-color: var(--bgColor);
+  color: #fff;
+}
+#customize .container .col .cta {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--green);
+  color: var(--bgColor);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 50%;
+  transition: 0.3s ease-in-out;
+}
+#customize .container .col .cta:hover {
+  background-color: var(--bgColor);
+  color: var(--green);
+}
+/* Customize */
 /* Contact */
 #contact {
   width: 100%;
@@ -330,9 +404,8 @@ nav .container .hamburger-menu {
   margin: 0 auto;
 }
 #contact .container {
-  padding: 50px 0;
   width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -537,7 +610,12 @@ nav .container .hamburger-menu {
   #contact .container .col {
     width: 100%;
   }
+  #customize .container .col {
+    width: 100%;
+    margin: 30px 0;
+  }
   #review .information P,
+  #customize .information P,
   #store .information p,
   #product .information P,
   #product .info,
