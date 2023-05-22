@@ -139,8 +139,8 @@ nav .container .hamburger-menu {
   background-color: #fff;
   color: var(--bgColor);
 }
-#hero .container .col-1 .img-hero {
-  transition: all 0.3 ease-in-out;
+#hero .container .col-2 {
+  transition: 0.7s ease-in;
 }
 /* Hero */
 /* Product */

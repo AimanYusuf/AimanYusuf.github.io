@@ -4,7 +4,6 @@ const imgaes = [
   "asset/img/hero2.png",
   "asset/img/hero3.png",
   "asset/img/hero4.png",
-  "asset/img/hero6.png",
 ];
 const heroImages = document.querySelector(".img-hero");
 let imgIndex = 0;
